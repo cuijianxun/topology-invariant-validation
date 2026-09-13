@@ -1,0 +1,21 @@
+{
+  "coded_semantic_cells": 78,
+  "eligibility_counts": {
+    "ELIGIBLE": 13,
+    "INELIGIBLE_DATA_TOOLKIT_NOT_MODEL_EVALUATION": 1,
+    "INELIGIBLE_NOT_PEER_REVIEWED": 1,
+    "INELIGIBLE_NO_SUBSTANTIVE_METHOD_ENTRY": 1
+  },
+  "eligible_repositories": 13,
+  "errors": [],
+  "ineligible_repositories": 3,
+  "newly_inspected_positive_signals": 4,
+  "passed": true,
+  "positive_static_signals": 7,
+  "previously_known_positive_signals": 3,
+  "registry_candidates": 16,
+  "reporting_constraint": "DESCRIPTIVE_MULTI_CASE_AUDIT_NOT_PREVALENCE",
+  "schema_version": 1,
+  "unknown_semantic_cell_rate": 0.02564102564102564,
+  "unknown_semantic_cells": 2
+}

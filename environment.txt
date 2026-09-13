@@ -1,0 +1,9 @@
+Verified operating system: Windows
+Verified Python: 3.12.13
+Verified PyTorch: 2.13.0+cpu
+Required for core checker, mutation, history, adapters, and scaling: Python standard library
+Required for native Gloo execution: CPU build of PyTorch with torch.distributed and Gloo support
+GPU required: no
+Private credential required: no
+Restricted dataset required: no
+Model weight required: no

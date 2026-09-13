@@ -1,0 +1,358 @@
+{
+  "contract_fdr": 1.0,
+  "contract_fdr_wilson95": [
+    0.9258998703338824,
+    0.9999999999999999
+  ],
+  "contract_false_alarm_rate": 0.0,
+  "contract_false_alarm_wilson95": [
+    1.3877787807814457e-17,
+    0.13797620467498017
+  ],
+  "comparisons": {
+    "schema_only": {
+      "absolute_fdr_gain": 0.9375,
+      "mcnemar_exact": {
+        "contract_only": 45,
+        "baseline_only": 0,
+        "discordant": 45,
+        "two_sided_p": 5.684341886080802e-14
+      }
+    },
+    "scalar_golden": {
+      "absolute_fdr_gain": 0.41666666666666663,
+      "mcnemar_exact": {
+        "contract_only": 20,
+        "baseline_only": 0,
+        "discordant": 20,
+        "two_sided_p": 1.9073486328125e-06
+      }
+    },
+    "generic_equality": {
+      "absolute_fdr_gain": 0.35416666666666663,
+      "mcnemar_exact": {
+        "contract_only": 17,
+        "baseline_only": 0,
+        "discordant": 17,
+        "two_sided_p": 1.52587890625e-05
+      }
+    }
+  },
+  "diagnosis": {
+    "correct": 48,
+    "total": 48,
+    "accuracy": 1.0,
+    "family": {
+      "SCENARIO_SET": {
+        "correct": 12,
+        "total": 12,
+        "accuracy": 1.0
+      },
+      "RNG_IDENTITY": {
+        "correct": 12,
+        "total": 12,
+        "accuracy": 1.0
+      },
+      "FAILURE_ACCOUNTING": {
+        "correct": 12,
+        "total": 12,
+        "accuracy": 1.0
+      },
+      "REDUCTION": {
+        "correct": 12,
+        "total": 12,
+        "accuracy": 1.0
+      }
+    },
+    "rows": [
+      {
+        "mutation": "scenario_drop_first",
+        "expected": "SCENARIO_SET",
+        "observed": "SCENARIO_SET",
+        "correct": true
+      },
+      {
+        "mutation": "scenario_drop_last",
+        "expected": "SCENARIO_SET",
+        "observed": "SCENARIO_SET",
+        "correct": true
+      },
+      {
+        "mutation": "scenario_duplicate_first",
+        "expected": "SCENARIO_SET",
+        "observed": "SCENARIO_SET",
+        "correct": true
+      },
+      {
+        "mutation": "scenario_replace_first",
+        "expected": "SCENARIO_SET",
+        "observed": "SCENARIO_SET",
+        "correct": true
+      },
+      {
+        "mutation": "scenario_even_only",
+        "expected": "SCENARIO_SET",
+        "observed": "SCENARIO_SET",
+        "correct": true
+      },
+      {
+        "mutation": "scenario_global_batch_floor",
+        "expected": "SCENARIO_SET",
+        "observed": "SCENARIO_SET",
+        "correct": true
+      },
+      {
+        "mutation": "scenario_drop_middle",
+        "expected": "SCENARIO_SET",
+        "observed": "SCENARIO_SET",
+        "correct": true
+      },
+      {
+        "mutation": "scenario_duplicate_last",
+        "expected": "SCENARIO_SET",
+        "observed": "SCENARIO_SET",
+        "correct": true
+      },
+      {
+        "mutation": "scenario_replace_last",
+        "expected": "SCENARIO_SET",
+        "observed": "SCENARIO_SET",
+        "correct": true
+      },
+      {
+        "mutation": "scenario_truncate_18",
+        "expected": "SCENARIO_SET",
+        "observed": "SCENARIO_SET",
+        "correct": true
+      },
+      {
+        "mutation": "scenario_add_new",
+        "expected": "SCENARIO_SET",
+        "observed": "SCENARIO_SET",
+        "correct": true
+      },
+      {
+        "mutation": "scenario_alias_one",
+        "expected": "SCENARIO_SET",
+        "observed": "SCENARIO_SET",
+        "correct": true
+      },
+      {
+        "mutation": "rng_rotate",
+        "expected": "RNG_IDENTITY",
+        "observed": "RNG_IDENTITY",
+        "correct": true
+      },
+      {
+        "mutation": "rng_reverse",
+        "expected": "RNG_IDENTITY",
+        "observed": "RNG_IDENTITY",
+        "correct": true
+      },
+      {
+        "mutation": "rng_same_all",
+        "expected": "RNG_IDENTITY",
+        "observed": "RNG_IDENTITY",
+        "correct": true
+      },
+      {
+        "mutation": "rng_one_changed",
+        "expected": "RNG_IDENTITY",
+        "observed": "RNG_IDENTITY",
+        "correct": true
+      },
+      {
+        "mutation": "rng_rank_local",
+        "expected": "RNG_IDENTITY",
+        "observed": "RNG_IDENTITY",
+        "correct": true
+      },
+      {
+        "mutation": "rng_xor_all",
+        "expected": "RNG_IDENTITY",
+        "observed": "RNG_IDENTITY",
+        "correct": true
+      },
+      {
+        "mutation": "rng_swap_pair",
+        "expected": "RNG_IDENTITY",
+        "observed": "RNG_IDENTITY",
+        "correct": true
+      },
+      {
+        "mutation": "rng_rank_hash",
+        "expected": "RNG_IDENTITY",
+        "observed": "RNG_IDENTITY",
+        "correct": true
+      },
+      {
+        "mutation": "rng_seed_off_by_one",
+        "expected": "RNG_IDENTITY",
+        "observed": "RNG_IDENTITY",
+        "correct": true
+      },
+      {
+        "mutation": "rng_truncated",
+        "expected": "RNG_IDENTITY",
+        "observed": "RNG_IDENTITY",
+        "correct": true
+      },
+      {
+        "mutation": "rng_position_based",
+        "expected": "RNG_IDENTITY",
+        "observed": "RNG_IDENTITY",
+        "correct": true
+      },
+      {
+        "mutation": "rng_zero_even",
+        "expected": "RNG_IDENTITY",
+        "observed": "RNG_IDENTITY",
+        "correct": true
+      },
+      {
+        "mutation": "failure_drop_failed",
+        "expected": "FAILURE_ACCOUNTING",
+        "observed": "FAILURE_ACCOUNTING",
+        "correct": true
+      },
+      {
+        "mutation": "failure_clear_one",
+        "expected": "FAILURE_ACCOUNTING",
+        "observed": "FAILURE_ACCOUNTING",
+        "correct": true
+      },
+      {
+        "mutation": "failure_add_one",
+        "expected": "FAILURE_ACCOUNTING",
+        "observed": "FAILURE_ACCOUNTING",
+        "correct": true
+      },
+      {
+        "mutation": "failure_swap_identity",
+        "expected": "FAILURE_ACCOUNTING",
+        "observed": "FAILURE_ACCOUNTING",
+        "correct": true
+      },
+      {
+        "mutation": "failure_clear_all",
+        "expected": "FAILURE_ACCOUNTING",
+        "observed": "FAILURE_ACCOUNTING",
+        "correct": true
+      },
+      {
+        "mutation": "failure_schema_loss",
+        "expected": "FAILURE_ACCOUNTING",
+        "observed": "FAILURE_ACCOUNTING",
+        "correct": true
+      },
+      {
+        "mutation": "failure_drop_first_failed",
+        "expected": "FAILURE_ACCOUNTING",
+        "observed": "FAILURE_ACCOUNTING",
+        "correct": true
+      },
+      {
+        "mutation": "failure_drop_second_failed",
+        "expected": "FAILURE_ACCOUNTING",
+        "observed": "FAILURE_ACCOUNTING",
+        "correct": true
+      },
+      {
+        "mutation": "failure_clear_second",
+        "expected": "FAILURE_ACCOUNTING",
+        "observed": "FAILURE_ACCOUNTING",
+        "correct": true
+      },
+      {
+        "mutation": "failure_add_second",
+        "expected": "FAILURE_ACCOUNTING",
+        "observed": "FAILURE_ACCOUNTING",
+        "correct": true
+      },
+      {
+        "mutation": "failure_none_status",
+        "expected": "FAILURE_ACCOUNTING",
+        "observed": "FAILURE_ACCOUNTING",
+        "correct": true
+      },
+      {
+        "mutation": "failure_string_status",
+        "expected": "FAILURE_ACCOUNTING",
+        "observed": "FAILURE_ACCOUNTING",
+        "correct": true
+      },
+      {
+        "mutation": "aggregate_stale",
+        "expected": "REDUCTION",
+        "observed": "REDUCTION",
+        "correct": true
+      },
+      {
+        "mutation": "aggregate_failed_as_zero",
+        "expected": "REDUCTION",
+        "observed": "REDUCTION",
+        "correct": true
+      },
+      {
+        "mutation": "aggregate_rank0_only",
+        "expected": "REDUCTION",
+        "observed": "REDUCTION",
+        "correct": true
+      },
+      {
+        "mutation": "aggregate_unweighted_shards",
+        "expected": "REDUCTION",
+        "observed": "REDUCTION",
+        "correct": true
+      },
+      {
+        "mutation": "aggregate_drop_max",
+        "expected": "REDUCTION",
+        "observed": "REDUCTION",
+        "correct": true
+      },
+      {
+        "mutation": "aggregate_rounded",
+        "expected": "REDUCTION",
+        "observed": "REDUCTION",
+        "correct": true
+      },
+      {
+        "mutation": "aggregate_median",
+        "expected": "REDUCTION",
+        "observed": "REDUCTION",
+        "correct": true
+      },
+      {
+        "mutation": "aggregate_min",
+        "expected": "REDUCTION",
+        "observed": "REDUCTION",
+        "correct": true
+      },
+      {
+        "mutation": "aggregate_max",
+        "expected": "REDUCTION",
+        "observed": "REDUCTION",
+        "correct": true
+      },
+      {
+        "mutation": "aggregate_first_half",
+        "expected": "REDUCTION",
+        "observed": "REDUCTION",
+        "correct": true
+      },
+      {
+        "mutation": "aggregate_score_association_rotate",
+        "expected": "REDUCTION",
+        "observed": "REDUCTION",
+        "correct": true
+      },
+      {
+        "mutation": "aggregate_epsilon_outside",
+        "expected": "REDUCTION",
+        "observed": "REDUCTION",
+        "correct": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,313 @@
+{
+  "evidence_level": "NATIVE_MULTIPROCESS_NOT_GLOO",
+  "cases": [
+    {
+      "token_count": 7,
+      "world_size": 1,
+      "sharding": "contiguous",
+      "repeats": 10,
+      "all_relations_pass": true,
+      "observed_child_pids": [
+        41360
+      ],
+      "median_seconds": 0.00027009999757865444,
+      "p95_seconds": 0.0007782999964547344
+    },
+    {
+      "token_count": 7,
+      "world_size": 1,
+      "sharding": "round_robin",
+      "repeats": 10,
+      "all_relations_pass": true,
+      "observed_child_pids": [
+        41360
+      ],
+      "median_seconds": 0.00031025000134832226,
+      "p95_seconds": 0.000515899999300018
+    },
+    {
+      "token_count": 10,
+      "world_size": 1,
+      "sharding": "contiguous",
+      "repeats": 10,
+      "all_relations_pass": true,
+      "observed_child_pids": [
+        41360
+      ],
+      "median_seconds": 0.00034559999767225236,
+      "p95_seconds": 0.00037120000342838466
+    },
+    {
+      "token_count": 10,
+      "world_size": 1,
+      "sharding": "round_robin",
+      "repeats": 10,
+      "all_relations_pass": true,
+      "observed_child_pids": [
+        41360
+      ],
+      "median_seconds": 0.00027430000045569614,
+      "p95_seconds": 0.0003298999945400283
+    },
+    {
+      "token_count": 17,
+      "world_size": 1,
+      "sharding": "contiguous",
+      "repeats": 10,
+      "all_relations_pass": true,
+      "observed_child_pids": [
+        41360
+      ],
+      "median_seconds": 0.0003327000013086945,
+      "p95_seconds": 0.0004904000015812926
+    },
+    {
+      "token_count": 17,
+      "world_size": 1,
+      "sharding": "round_robin",
+      "repeats": 10,
+      "all_relations_pass": true,
+      "observed_child_pids": [
+        41360
+      ],
+      "median_seconds": 0.0002430500026093796,
+      "p95_seconds": 0.00028059999749530107
+    },
+    {
+      "token_count": 7,
+      "world_size": 2,
+      "sharding": "contiguous",
+      "repeats": 10,
+      "all_relations_pass": true,
+      "observed_child_pids": [
+        33372,
+        41048
+      ],
+      "median_seconds": 0.0004223500036459882,
+      "p95_seconds": 0.0007480999993276782
+    },
+    {
+      "token_count": 7,
+      "world_size": 2,
+      "sharding": "round_robin",
+      "repeats": 10,
+      "all_relations_pass": true,
+      "observed_child_pids": [
+        33372,
+        41048
+      ],
+      "median_seconds": 0.0005073000029369723,
+      "p95_seconds": 0.0005798999991384335
+    },
+    {
+      "token_count": 10,
+      "world_size": 2,
+      "sharding": "contiguous",
+      "repeats": 10,
+      "all_relations_pass": true,
+      "observed_child_pids": [
+        33372,
+        41048
+      ],
+      "median_seconds": 0.0004190500003460329,
+      "p95_seconds": 0.0006638999984716065
+    },
+    {
+      "token_count": 10,
+      "world_size": 2,
+      "sharding": "round_robin",
+      "repeats": 10,
+      "all_relations_pass": true,
+      "observed_child_pids": [
+        33372,
+        41048
+      ],
+      "median_seconds": 0.0005297999996400904,
+      "p95_seconds": 0.003911700005119201
+    },
+    {
+      "token_count": 17,
+      "world_size": 2,
+      "sharding": "contiguous",
+      "repeats": 10,
+      "all_relations_pass": true,
+      "observed_child_pids": [
+        33372,
+        41048
+      ],
+      "median_seconds": 0.0004597999977704603,
+      "p95_seconds": 0.0005581000004895031
+    },
+    {
+      "token_count": 17,
+      "world_size": 2,
+      "sharding": "round_robin",
+      "repeats": 10,
+      "all_relations_pass": true,
+      "observed_child_pids": [
+        33372,
+        41048
+      ],
+      "median_seconds": 0.00048550000065006316,
+      "p95_seconds": 0.0010332999954698607
+    },
+    {
+      "token_count": 7,
+      "world_size": 3,
+      "sharding": "contiguous",
+      "repeats": 10,
+      "all_relations_pass": true,
+      "observed_child_pids": [
+        5408
+      ],
+      "median_seconds": 0.00041865000457619317,
+      "p95_seconds": 0.0005874000053154305
+    },
+    {
+      "token_count": 7,
+      "world_size": 3,
+      "sharding": "round_robin",
+      "repeats": 10,
+      "all_relations_pass": true,
+      "observed_child_pids": [
+        5408
+      ],
+      "median_seconds": 0.0002754500019364059,
+      "p95_seconds": 0.00034130000130971894
+    },
+    {
+      "token_count": 10,
+      "world_size": 3,
+      "sharding": "contiguous",
+      "repeats": 10,
+      "all_relations_pass": true,
+      "observed_child_pids": [
+        5408
+      ],
+      "median_seconds": 0.0002906000008806586,
+      "p95_seconds": 0.00042779999785125256
+    },
+    {
+      "token_count": 10,
+      "world_size": 3,
+      "sharding": "round_robin",
+      "repeats": 10,
+      "all_relations_pass": true,
+      "observed_child_pids": [
+        5408
+      ],
+      "median_seconds": 0.000509149998833891,
+      "p95_seconds": 0.0008321999994223006
+    },
+    {
+      "token_count": 17,
+      "world_size": 3,
+      "sharding": "contiguous",
+      "repeats": 10,
+      "all_relations_pass": true,
+      "observed_child_pids": [
+        5408
+      ],
+      "median_seconds": 0.0003332999986014329,
+      "p95_seconds": 0.00036440000258153304
+    },
+    {
+      "token_count": 17,
+      "world_size": 3,
+      "sharding": "round_robin",
+      "repeats": 10,
+      "all_relations_pass": true,
+      "observed_child_pids": [
+        5408
+      ],
+      "median_seconds": 0.000363799998012837,
+      "p95_seconds": 0.00044689999776892364
+    },
+    {
+      "token_count": 7,
+      "world_size": 4,
+      "sharding": "contiguous",
+      "repeats": 10,
+      "all_relations_pass": true,
+      "observed_child_pids": [
+        41280
+      ],
+      "median_seconds": 0.00040794999949866906,
+      "p95_seconds": 0.0006070000017643906
+    },
+    {
+      "token_count": 7,
+      "world_size": 4,
+      "sharding": "round_robin",
+      "repeats": 10,
+      "all_relations_pass": true,
+      "observed_child_pids": [
+        41280
+      ],
+      "median_seconds": 0.00028390000079525635,
+      "p95_seconds": 0.0003840000063064508
+    },
+    {
+      "token_count": 10,
+      "world_size": 4,
+      "sharding": "contiguous",
+      "repeats": 10,
+      "all_relations_pass": true,
+      "observed_child_pids": [
+        41280
+      ],
+      "median_seconds": 0.000341799997841008,
+      "p95_seconds": 0.0003744000059668906
+    },
+    {
+      "token_count": 10,
+      "world_size": 4,
+      "sharding": "round_robin",
+      "repeats": 10,
+      "all_relations_pass": true,
+      "observed_child_pids": [
+        41280
+      ],
+      "median_seconds": 0.0006016999977873638,
+      "p95_seconds": 0.0007684000011067837
+    },
+    {
+      "token_count": 17,
+      "world_size": 4,
+      "sharding": "contiguous",
+      "repeats": 10,
+      "all_relations_pass": true,
+      "observed_child_pids": [
+        41280
+      ],
+      "median_seconds": 0.00037304999932530336,
+      "p95_seconds": 0.0006579999972018413
+    },
+    {
+      "token_count": 17,
+      "world_size": 4,
+      "sharding": "round_robin",
+      "repeats": 10,
+      "all_relations_pass": true,
+      "observed_child_pids": [
+        41280
+      ],
+      "median_seconds": 0.0003954500025429297,
+      "p95_seconds": 0.0004448000036063604
+    }
+  ],
+  "distinct_child_pids": [
+    5408,
+    33372,
+    41048,
+    41280,
+    41360
+  ],
+  "gates": {
+    "all_24_topologies_pass": true,
+    "true_child_processes_observed": true,
+    "ten_repeats_each": true
+  },
+  "overall_pass": true,
+  "gloo_gate_status": "BLOCKED_MISSING_TORCH"
+}

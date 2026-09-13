@@ -1,0 +1,17 @@
+registry_id,project,official_repo_url,venue_year,discovery_sources,prior_code_exposure,registry_status
+topology-REG-001,Drive-WM,https://github.com/BraveGroup/Drive-WM,CVPR 2024,"WorldLens;Awesome-World-Models",README_AND_CODE_PREVIOUSLY_READ,FROZEN_CANDIDATE
+topology-REG-002,DriveDreamer,https://github.com/JeffWang987/DriveDreamer,ECCV 2024,"WorldLens;Awesome-World-Models",POSITIVE_PATH_PREVIOUSLY_READ,FROZEN_CANDIDATE
+topology-REG-003,Vista,https://github.com/OpenDriveLab/Vista,NeurIPS 2024,"WorldLens;Awesome-World-Models",README_AND_CODE_PREVIOUSLY_READ,FROZEN_CANDIDATE
+topology-REG-004,MagicDrive,https://github.com/cure-lab/MagicDrive,ICLR 2024,"WorldLens;Awesome-World-Models",NONE_BEFORE_FREEZE,FROZEN_CANDIDATE
+topology-REG-005,Panacea,https://github.com/wenyuqing/panacea,CVPR 2024,"WorldLens;Awesome-World-Models",NONE_BEFORE_FREEZE,FROZEN_CANDIDATE
+topology-REG-006,DriveDreamer2,https://github.com/f1yfisher/DriveDreamer2,AAAI 2025,"WorldLens;Awesome-World-Models",NONE_BEFORE_FREEZE,FROZEN_CANDIDATE
+topology-REG-007,OpenDWM,https://github.com/SenseTime-FVG/OpenDWM,CVPR 2025 implementations,"WorldLens;Awesome-World-Models",POSITIVE_PATH_PREVIOUSLY_READ,FROZEN_CANDIDATE
+topology-REG-008,WorldLens,https://github.com/worldbench/WorldLens,CVPR 2026 Oral,"WorldLens;Awesome-World-Models",NONE_BEFORE_FREEZE,FROZEN_CANDIDATE
+topology-REG-009,DriveLaW,https://github.com/xiaomi-research/drivelaw,CVPR 2026,"WorldLens;Awesome-World-Models",POSITIVE_PATH_PREVIOUSLY_READ,FROZEN_CANDIDATE
+topology-REG-010,Navigation World Models,https://github.com/facebookresearch/nwm,CVPR 2025,"Awesome-World-Models;official paper page",NONE_BEFORE_FREEZE,FROZEN_CANDIDATE
+topology-REG-011,CarDreamer,https://github.com/ucd-dare/CarDreamer,IEEE Internet of Things Journal 2024,"Awesome-World-Models;official project page",NONE_BEFORE_FREEZE,FROZEN_CANDIDATE
+topology-REG-012,DriveArena,https://github.com/PJLab-ADG/DriveArena,ICCV 2025,"WorldLens;Awesome-World-Models",NONE_BEFORE_FREEZE,FROZEN_CANDIDATE
+topology-REG-013,MagicDrive-V2,https://github.com/flymin/MagicDrive-V2,ICCV 2025,"WorldLens;Awesome-World-Models",NONE_BEFORE_FREEZE,FROZEN_CANDIDATE
+topology-REG-014,GenAD / DriveAGI,https://github.com/OpenDriveLab/DriveAGI,CVPR 2024 Highlight,"WorldLens;Awesome-World-Models",NONE_BEFORE_FREEZE,FROZEN_CANDIDATE
+topology-REG-015,DrivingWorld,https://github.com/YvanYin/DrivingWorld,arXiv 2024,"WorldLens;Awesome-World-Models",README_AND_CODE_PREVIOUSLY_READ,FROZEN_CANDIDATE
+topology-REG-016,DriveDreamer4D,https://github.com/GigaAI-research/DriveDreamer4D,CVPR 2025,"WorldLens;Awesome-World-Models",NONE_BEFORE_FREEZE,FROZEN_CANDIDATE

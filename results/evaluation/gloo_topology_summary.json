@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "evidence_level": "NATIVE_TORCH_DISTRIBUTED_GLOO",
+  "torch_version": "2.13.0+cpu",
+  "backend": "gloo",
+  "cases": [
+    {
+      "world_size": 2,
+      "token_count": 17,
+      "sharding": "contiguous",
+      "repeats": 10,
+      "all_relations_pass": true,
+      "median_seconds": 0.0008874000013747718,
+      "p95_seconds": 0.001159799998276867
+    },
+    {
+      "world_size": 2,
+      "token_count": 17,
+      "sharding": "round_robin",
+      "repeats": 10,
+      "all_relations_pass": true,
+      "median_seconds": 0.0008034499987843446,
+      "p95_seconds": 0.0010265000018989667
+    },
+    {
+      "world_size": 2,
+      "token_count": 23,
+      "sharding": "contiguous",
+      "repeats": 10,
+      "all_relations_pass": true,
+      "median_seconds": 0.0008723999962967355,
+      "p95_seconds": 0.0012092000033590011
+    },
+    {
+      "world_size": 2,
+      "token_count": 23,
+      "sharding": "round_robin",
+      "repeats": 10,
+      "all_relations_pass": true,
+      "median_seconds": 0.0010087500013469253,
+      "p95_seconds": 0.0012962999971932732
+    },
+    {
+      "world_size": 3,
+      "token_count": 17,
+      "sharding": "contiguous",
+      "repeats": 10,
+      "all_relations_pass": true,
+      "median_seconds": 0.0014873500040266663,
+      "p95_seconds": 0.001686299998254981
+    },
+    {
+      "world_size": 3,
+      "token_count": 17,
+      "sharding": "round_robin",
+      "repeats": 10,
+      "all_relations_pass": true,
+      "median_seconds": 0.0017933500021172222,
+      "p95_seconds": 0.0020050000021001324
+    },
+    {
+      "world_size": 3,
+      "token_count": 23,
+      "sharding": "contiguous",
+      "repeats": 10,
+      "all_relations_pass": true,
+      "median_seconds": 0.001537700001790654,
+      "p95_seconds": 0.0017428999999538064
+    },
+    {
+      "world_size": 3,
+      "token_count": 23,
+      "sharding": "round_robin",
+      "repeats": 10,
+      "all_relations_pass": true,
+      "median_seconds": 0.0013554500001191627,
+      "p95_seconds": 0.0016953999947872944
+    },
+    {
+      "world_size": 4,
+      "token_count": 17,
+      "sharding": "contiguous",
+      "repeats": 10,
+      "all_relations_pass": true,
+      "median_seconds": 0.001791600003343774,
+      "p95_seconds": 0.0020475999990594573
+    },
+    {
+      "world_size": 4,
+      "token_count": 17,
+      "sharding": "round_robin",
+      "repeats": 10,
+      "all_relations_pass": true,
+      "median_seconds": 0.0017085999970731791,
+      "p95_seconds": 0.0018165000001317821
+    },
+    {
+      "world_size": 4,
+      "token_count": 23,
+      "sharding": "contiguous",
+      "repeats": 10,
+      "all_relations_pass": true,
+      "median_seconds": 0.001705549999314826,
+      "p95_seconds": 0.0018406999952276237
+    },
+    {
+      "world_size": 4,
+      "token_count": 23,
+      "sharding": "round_robin",
+      "repeats": 10,
+      "all_relations_pass": true,
+      "median_seconds": 0.001857499999459833,
+      "p95_seconds": 0.0020884999976260588
+    }
+  ],
+  "gates": {
+    "gloo_available": true,
+    "actual_world_sizes_2_3_4": true,
+    "complete_topology_matrix": true,
+    "ten_repeats_each": true,
+    "all_four_relations_pass": true
+  },
+  "overall_pass": true
+}

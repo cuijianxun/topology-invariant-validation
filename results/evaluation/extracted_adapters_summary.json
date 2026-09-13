@@ -1,0 +1,1019 @@
+{
+  "schema_version": 1,
+  "evidence_level": "EXTRACTED_SEMANTICS_NATIVE_MULTIPROCESS_NOT_ORIGINAL_PIPELINE_NOT_GLOO",
+  "source_commits": {
+    "DriveDreamer": "da1ca92f831bc23d91b59ad418eb47b41cbb1fa9",
+    "DriveLaW": "b26bffe57dae9e874512818194b204006ab0d089",
+    "OpenDWM": "b0ecc3d4020612376ea5a87500f98bc76893428f"
+  },
+  "cases": [
+    {
+      "adapter": "DriveDreamer_prepared_shard_main_only",
+      "world_size": 2,
+      "token_count": 17,
+      "repeats": 10,
+      "faithful_violation_runs": 10,
+      "repaired_pass_runs": 10,
+      "observed_child_pids": [
+        30580,
+        37948
+      ],
+      "errors": [
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        }
+      ]
+    },
+    {
+      "adapter": "DriveLaW_rank0_size_for_all_payloads",
+      "world_size": 2,
+      "token_count": 17,
+      "repeats": 10,
+      "faithful_violation_runs": 10,
+      "repaired_pass_runs": 10,
+      "observed_child_pids": [
+        30580,
+        37948
+      ],
+      "errors": [
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        }
+      ]
+    },
+    {
+      "adapter": "OpenDWM_world_batch_floor",
+      "world_size": 2,
+      "token_count": 17,
+      "repeats": 10,
+      "faithful_violation_runs": 10,
+      "repaired_pass_runs": 10,
+      "observed_child_pids": [
+        30580,
+        37948
+      ],
+      "errors": [
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        }
+      ]
+    },
+    {
+      "adapter": "DriveDreamer_prepared_shard_main_only",
+      "world_size": 2,
+      "token_count": 23,
+      "repeats": 10,
+      "faithful_violation_runs": 10,
+      "repaired_pass_runs": 10,
+      "observed_child_pids": [
+        30580,
+        37948
+      ],
+      "errors": [
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        }
+      ]
+    },
+    {
+      "adapter": "DriveLaW_rank0_size_for_all_payloads",
+      "world_size": 2,
+      "token_count": 23,
+      "repeats": 10,
+      "faithful_violation_runs": 10,
+      "repaired_pass_runs": 10,
+      "observed_child_pids": [
+        30580,
+        37948
+      ],
+      "errors": [
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        }
+      ]
+    },
+    {
+      "adapter": "OpenDWM_world_batch_floor",
+      "world_size": 2,
+      "token_count": 23,
+      "repeats": 10,
+      "faithful_violation_runs": 10,
+      "repaired_pass_runs": 10,
+      "observed_child_pids": [
+        30580,
+        37948
+      ],
+      "errors": [
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        }
+      ]
+    },
+    {
+      "adapter": "DriveDreamer_prepared_shard_main_only",
+      "world_size": 3,
+      "token_count": 17,
+      "repeats": 10,
+      "faithful_violation_runs": 10,
+      "repaired_pass_runs": 10,
+      "observed_child_pids": [
+        12064,
+        24664
+      ],
+      "errors": [
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        }
+      ]
+    },
+    {
+      "adapter": "DriveLaW_rank0_size_for_all_payloads",
+      "world_size": 3,
+      "token_count": 17,
+      "repeats": 10,
+      "faithful_violation_runs": 10,
+      "repaired_pass_runs": 10,
+      "observed_child_pids": [
+        12064,
+        24664,
+        33680
+      ],
+      "errors": [
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        }
+      ]
+    },
+    {
+      "adapter": "OpenDWM_world_batch_floor",
+      "world_size": 3,
+      "token_count": 17,
+      "repeats": 10,
+      "faithful_violation_runs": 10,
+      "repaired_pass_runs": 10,
+      "observed_child_pids": [
+        12064,
+        24664,
+        33680
+      ],
+      "errors": [
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        }
+      ]
+    },
+    {
+      "adapter": "DriveDreamer_prepared_shard_main_only",
+      "world_size": 3,
+      "token_count": 23,
+      "repeats": 10,
+      "faithful_violation_runs": 10,
+      "repaired_pass_runs": 10,
+      "observed_child_pids": [
+        12064,
+        24664,
+        33680
+      ],
+      "errors": [
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        }
+      ]
+    },
+    {
+      "adapter": "DriveLaW_rank0_size_for_all_payloads",
+      "world_size": 3,
+      "token_count": 23,
+      "repeats": 10,
+      "faithful_violation_runs": 10,
+      "repaired_pass_runs": 10,
+      "observed_child_pids": [
+        12064,
+        24664,
+        33680
+      ],
+      "errors": [
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        }
+      ]
+    },
+    {
+      "adapter": "OpenDWM_world_batch_floor",
+      "world_size": 3,
+      "token_count": 23,
+      "repeats": 10,
+      "faithful_violation_runs": 10,
+      "repaired_pass_runs": 10,
+      "observed_child_pids": [
+        12064,
+        24664,
+        33680
+      ],
+      "errors": [
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        }
+      ]
+    },
+    {
+      "adapter": "DriveDreamer_prepared_shard_main_only",
+      "world_size": 4,
+      "token_count": 17,
+      "repeats": 10,
+      "faithful_violation_runs": 10,
+      "repaired_pass_runs": 10,
+      "observed_child_pids": [
+        5772,
+        35228,
+        38892
+      ],
+      "errors": [
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        }
+      ]
+    },
+    {
+      "adapter": "DriveLaW_rank0_size_for_all_payloads",
+      "world_size": 4,
+      "token_count": 17,
+      "repeats": 10,
+      "faithful_violation_runs": 10,
+      "repaired_pass_runs": 10,
+      "observed_child_pids": [
+        5772,
+        30468,
+        35228,
+        38892
+      ],
+      "errors": [
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        }
+      ]
+    },
+    {
+      "adapter": "OpenDWM_world_batch_floor",
+      "world_size": 4,
+      "token_count": 17,
+      "repeats": 10,
+      "faithful_violation_runs": 10,
+      "repaired_pass_runs": 10,
+      "observed_child_pids": [
+        5772,
+        30468,
+        35228,
+        38892
+      ],
+      "errors": [
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        }
+      ]
+    },
+    {
+      "adapter": "DriveDreamer_prepared_shard_main_only",
+      "world_size": 4,
+      "token_count": 23,
+      "repeats": 10,
+      "faithful_violation_runs": 10,
+      "repaired_pass_runs": 10,
+      "observed_child_pids": [
+        5772,
+        30468,
+        35228,
+        38892
+      ],
+      "errors": [
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        }
+      ]
+    },
+    {
+      "adapter": "DriveLaW_rank0_size_for_all_payloads",
+      "world_size": 4,
+      "token_count": 23,
+      "repeats": 10,
+      "faithful_violation_runs": 10,
+      "repaired_pass_runs": 10,
+      "observed_child_pids": [
+        5772,
+        30468,
+        35228,
+        38892
+      ],
+      "errors": [
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        },
+        {
+          "faithful": "UnpicklingError",
+          "repaired": null
+        }
+      ]
+    },
+    {
+      "adapter": "OpenDWM_world_batch_floor",
+      "world_size": 4,
+      "token_count": 23,
+      "repeats": 10,
+      "faithful_violation_runs": 10,
+      "repaired_pass_runs": 10,
+      "observed_child_pids": [
+        5772,
+        30468,
+        35228,
+        38892
+      ],
+      "errors": [
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        },
+        {
+          "faithful": null,
+          "repaired": null
+        }
+      ]
+    }
+  ],
+  "distinct_child_pids": [
+    5772,
+    12064,
+    24664,
+    30468,
+    30580,
+    33680,
+    35228,
+    37948,
+    38892
+  ],
+  "gates": {
+    "three_adapters": true,
+    "three_world_sizes": true,
+    "faithful_triggers_every_run": true,
+    "repaired_passes_every_run": true,
+    "native_child_processes": true
+  },
+  "overall_pass": true,
+  "gloo_gate_status": "SEPARATE_NATIVE_GLOO_PASS"
+}

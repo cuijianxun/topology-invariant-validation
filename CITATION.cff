@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying manuscript when using these reproduction materials."
+type: software
+title: "Topology-Invariant Validation Contracts for Distributed Driving-World-Model Evaluation"
+version: "1.0.0"
+authors:
+  - family-names: Cui
+    given-names: Jianxun
+  - family-names: Cui
+    given-names: Jinlong
+  - family-names: Milojkovic
+    given-names: Marko
+  - family-names: Peric
+    given-names: Stanisa
+  - family-names: Devedzic
+    given-names: Vladan
+abstract: "Trace-level topology-invariance checking and reproduction materials for distributed driving-world-model evaluation."

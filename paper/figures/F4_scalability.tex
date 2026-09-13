@@ -1,0 +1,31 @@
+\documentclass[tikz,border=2pt]{standalone}
+\usepackage{pgfplots}
+\usepgfplotslibrary{groupplots}
+\pgfplotsset{compat=1.18}
+\definecolor{blue}{HTML}{0072B2}\definecolor{sky}{HTML}{56B4E9}
+\definecolor{green}{HTML}{009E73}\definecolor{orange}{HTML}{E69F00}\definecolor{ink}{HTML}{263238}
+\begin{document}
+\begin{tikzpicture}[font=\sffamily\fontsize{8}{9.2}\selectfont]
+\begin{groupplot}[group style={group size=2 by 1,horizontal sep=15mm},height=58mm,
+ tick label style={font=\sffamily\fontsize{8}{9}\selectfont},
+ label style={font=\sffamily\fontsize{8}{9}\selectfont},
+ title style={font=\sffamily\bfseries\fontsize{8}{9}\selectfont},
+ legend style={font=\sffamily\fontsize{8}{9}\selectfont,draw=none,fill=none}]
+\nextgroupplot[title={(a) Checker latency},width=92mm,xmode=log,ymode=log,
+ xlabel={Token count},ylabel={Latency (ms)},xtick={100,1000,10000,100000},
+ xticklabels={$10^2$,$10^3$,$10^4$,$10^5$},grid=major,grid style={gray!18},
+ legend columns=2,legend pos=north west]
+\addplot+[blue,mark=*,error bars/.cd,y dir=plus,y explicit] coordinates {(100,0.01525)+-(0,0.00115) (1000,0.191)+-(0,0.1016) (10000,1.86825)+-(0,0.51235) (100000,29.1123)+-(0,2.2662)};\addlegendentry{$w=1$}
+\addplot+[green,mark=square*,dashed,error bars/.cd,y dir=plus,y explicit] coordinates {(100,0.01645)+-(0,0.00045) (1000,0.1598)+-(0,0.0127) (10000,1.98825)+-(0,0.44565) (100000,32.7525)+-(0,2.9176)};\addlegendentry{$w=2$}
+\addplot+[orange,mark=triangle*,dotted,error bars/.cd,y dir=plus,y explicit] coordinates {(100,0.0173)+-(0,0.0011) (1000,0.16865)+-(0,0.07535) (10000,2.1404)+-(0,0.3316) (100000,38.2086)+-(0,3.91)};\addlegendentry{$w=4$}
+\addplot+[sky!70!black,mark=diamond*,dashdotted,error bars/.cd,y dir=plus,y explicit] coordinates {(100,0.0184)+-(0,0.0021) (1000,0.17315)+-(0,0.03195) (10000,2.12765)+-(0,0.20775) (100000,42.27055)+-(0,4.54225)};\addlegendentry{$w=8$}
+\node[anchor=south east,font=\sffamily\fontsize{8}{9}\selectfont] at (rel axis cs:.98,.03) {points: median; whiskers: 95th percentile};
+
+\nextgroupplot[title={(b) Peak traced allocation},width=72mm,xmode=log,ymode=log,
+ xlabel={Token count},ylabel={Peak allocation (MiB)},xtick={100,1000,10000,100000},
+ xticklabels={$10^2$,$10^3$,$10^4$,$10^5$},grid=major,grid style={gray!18}]
+\addplot+[blue,very thick,mark=*,mark size=2.5pt] coordinates {(100,0.008232)(1000,0.070396)(10000,0.61718)(100000,8.554893)};
+\node[anchor=north west,font=\sffamily\fontsize{8}{9}\selectfont,align=left] at (rel axis cs:.03,.97) {identical across\\logical world sizes};
+\end{groupplot}
+\end{tikzpicture}
+\end{document}

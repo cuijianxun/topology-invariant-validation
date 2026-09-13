@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "protocol": "experiments/historical_defect_protocol.md",
+  "evidence_level": "PUBLIC_HISTORY_PATCH_EXTRACTED_CPU_FIXTURES_NOT_ORIGINAL_PACKAGE_EXECUTION",
+  "defect_count": 5,
+  "repository_or_framework_count": 2,
+  "detections": 5,
+  "detection_rate": 1.0,
+  "fixed_alerts": 1,
+  "gates": {
+    "at_least_five_historical_defects": true,
+    "at_least_two_independent_repositories_or_frameworks": true,
+    "all_source_pre_post_assertions_pass": true,
+    "detection_rate_at_least_70pct": true,
+    "no_alert_on_source_fixed_versions": false
+  },
+  "decision": "FALSIFIED",
+  "cases": [
+    {
+      "historical_id": "HIST-001",
+      "repository": "huggingface/accelerate",
+      "public_record": "https://github.com/huggingface/accelerate/issues/1383",
+      "immutable_fix_or_revision": "e965d590cda39208fa2ba4ee5b3e84439011baaf",
+      "maintainer_title": "Fix gather_obj",
+      "source_symptom": "object gather returns only the local/main-rank object",
+      "source_success_predicate": "all rank objects are returned exactly once",
+      "source_prefix_assertion_pass": true,
+      "source_fixed_assertion_pass": true,
+      "source_details": {
+        "prefix_gathered_ranks": [
+          0
+        ],
+        "fixed_gathered_ranks": [
+          0,
+          1
+        ]
+      },
+      "prefix_detected": true,
+      "prefix_relation_posthoc": "SCENARIO_SET",
+      "fixed_alert": false,
+      "fixed_relation_posthoc": null
+    },
+    {
+      "historical_id": "HIST-002",
+      "repository": "huggingface/accelerate",
+      "public_record": "https://github.com/huggingface/accelerate/pull/2694",
+      "immutable_fix_or_revision": "baafaf4a6e039ea936e215904248cb57ba768722",
+      "maintainer_title": "Fix sampler generator synchronization",
+      "source_symptom": "independent sampler generators produce incorrect cross-rank sharding",
+      "source_success_predicate": "the union of rank shards covers the epoch sample set without omission",
+      "source_prefix_assertion_pass": true,
+      "source_fixed_assertion_pass": true,
+      "source_details": {
+        "prefix_unique": 16,
+        "fixed_unique": 22,
+        "expected_unique": 22
+      },
+      "prefix_detected": true,
+      "prefix_relation_posthoc": "SCENARIO_SET",
+      "fixed_alert": false,
+      "fixed_relation_posthoc": null
+    },
+    {
+      "historical_id": "HIST-003",
+      "repository": "huggingface/accelerate",
+      "public_record": "https://github.com/huggingface/accelerate/pull/1709",
+      "immutable_fix_or_revision": "518c206a2a6485658c9aa0caca0e15f1bc6ba168",
+      "maintainer_title": "Fix DataLoaderDispatcher infinite wait",
+      "source_symptom": "only the main process creates an iterator that enters a shared-seed collective and other ranks wait",
+      "source_success_predicate": "all ranks enter iterator initialization and the data loop completes",
+      "source_prefix_assertion_pass": true,
+      "source_fixed_assertion_pass": true,
+      "source_details": {
+        "prefix_completed_ranks": [
+          0
+        ],
+        "fixed_completed_ranks": [
+          0,
+          1
+        ],
+        "prefix_outcome": "timeout/incomplete loop",
+        "fixed_outcome": "completed loop"
+      },
+      "prefix_detected": true,
+      "prefix_relation_posthoc": "SCENARIO_SET",
+      "fixed_alert": false,
+      "fixed_relation_posthoc": null
+    },
+    {
+      "historical_id": "HIST-004",
+      "repository": "huggingface/accelerate",
+      "public_record": "https://github.com/huggingface/accelerate/issues/4053",
+      "immutable_fix_or_revision": "bb803dafedb23f57e4ce322376bf2dee3aafc497",
+      "maintainer_title": "Fix implicit split padding",
+      "source_symptom": "a process receives the final item even when apply_padding is false and its slice is empty",
+      "source_success_predicate": "empty slices remain empty and each input is emitted once",
+      "source_prefix_assertion_pass": true,
+      "source_fixed_assertion_pass": true,
+      "source_details": {
+        "prefix_empty_rank_slice": [
+          "element"
+        ],
+        "fixed_empty_rank_slice": []
+      },
+      "prefix_detected": true,
+      "prefix_relation_posthoc": "SCENARIO_SET",
+      "fixed_alert": false,
+      "fixed_relation_posthoc": null
+    },
+    {
+      "historical_id": "HIST-005",
+      "repository": "pytorch/pytorch",
+      "public_record": "https://github.com/pytorch/pytorch/issues/22584",
+      "immutable_fix_or_revision": "https://github.com/pytorch/pytorch/pull/41171",
+      "maintainer_title": "Allow drop_last option in DistributedSampler",
+      "source_symptom": "validation results vary because extra samples are added to make shards divisible",
+      "source_success_predicate": "no sample is repeated when drop_last is enabled",
+      "source_prefix_assertion_pass": true,
+      "source_fixed_assertion_pass": true,
+      "source_details": {
+        "prefix_duplicate_count": 1,
+        "fixed_duplicate_count": 0,
+        "fixed_dropped_tail": "validation-4"
+      },
+      "prefix_detected": true,
+      "prefix_relation_posthoc": "SCENARIO_SET",
+      "fixed_alert": true,
+      "fixed_relation_posthoc": "SCENARIO_SET"
+    }
+  ]
+}

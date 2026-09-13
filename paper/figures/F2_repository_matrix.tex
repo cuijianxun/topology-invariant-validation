@@ -1,0 +1,30 @@
+\documentclass[tikz,border=2pt]{standalone}
+\usepackage{tikz}
+\definecolor{blue}{HTML}{0072B2}\definecolor{green}{HTML}{009E73}
+\definecolor{orange}{HTML}{E69F00}\definecolor{verm}{HTML}{D55E00}
+\definecolor{gray}{HTML}{B0BEC5}\definecolor{ink}{HTML}{263238}
+\begin{document}
+\begin{tikzpicture}[font=\sffamily\fontsize{8}{9.2}\selectfont,x=1cm,y=.48cm]
+\def\projects{{"DriveDreamer","Vista","MagicDrive","Panacea","DriveDreamer-2","OpenDWM","WorldLens","DriveLaW","Navigation WM","CarDreamer","DriveArena","MagicDrive-V2","DriveDreamer4D"}}
+\foreach \x/\lab/\col in {0/Scenario set/blue,1/Random stream/green,2/Failure record/orange,3/Aggregation/verm}{
+  \node[rotate=28,anchor=south west,text=\col] at (4.9+\x*1.45,1.0) {\bfseries \lab};
+}
+\foreach \i in {0,...,12}{
+  \pgfmathparse{\projects[\i]}\let\p\pgfmathresult
+  \node[anchor=east,text=ink] at (4.65,-\i) {\p};
+  \foreach \j in {0,...,3}{\draw[gray!55,line width=.4pt] (5.1+\j*1.45,-\i) circle (2.1pt);}
+}
+\foreach \i/\j/\c in {0/0/blue,3/0/blue,3/1/green,4/0/blue,4/1/green,5/0/blue,6/2/orange,7/3/verm,8/0/blue}{
+  \fill[\c] (5.1+\j*1.45,-\i) circle (3.4pt);
+}
+\draw[gray!60] (4.86,.55) rectangle (9.69,-12.45);
+\node[anchor=west,font=\sffamily\fontsize{8}{9}\selectfont,text=ink] at (10.05,-2.0) {\textbf{Repository audit}};
+\node[anchor=west,font=\sffamily\fontsize{8}{9}\selectfont,text=ink] at (10.05,-3.0) {16 candidates};
+\node[anchor=west,font=\sffamily\fontsize{8}{9}\selectfont,text=ink] at (10.05,-4.0) {13 eligible};
+\node[anchor=west,font=\sffamily\fontsize{8}{9}\selectfont,text=ink] at (10.05,-5.0) {7 with $\geq$1 signal};
+\node[anchor=west,font=\sffamily\fontsize{8}{9}\selectfont,text=ink] at (10.05,-6.5) {\textbf{Source evidence}};
+\node[anchor=west,align=left,text width=50mm,font=\sffamily\fontsize{8}{9}\selectfont,text=ink] at (10.05,-8.0) {Revision-pinned source coding;\\unresolved fields recorded\\as unknown.};
+\node[anchor=west,font=\sffamily\fontsize{8}{9}\selectfont,text=gray!80!black] at (10.05,-11.2) {$\circ$ no confirmed signal};
+\node[anchor=west,font=\sffamily\fontsize{8}{9}\selectfont,text=ink] at (10.05,-12.2) {$\bullet$ confirmed signal};
+\end{tikzpicture}
+\end{document}

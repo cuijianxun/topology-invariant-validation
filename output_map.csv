@@ -1,0 +1,14 @@
+manuscript_item,evidence_file,producer_or_source
+Four-identity contract definition,experiments/evaluation_protocol.md,scripts/topology_checker.py
+48-mutant controlled benchmark,results/evaluation/formal_analysis.json,scripts/evaluation_analysis.py
+Allowed-variation false-alarm evaluation,results/evaluation/formal_analysis.json,scripts/evaluation_analysis.py
+Repository audit of 16 public projects,data/repository_audit.csv,scripts/repository_audit.py
+Historical pre-fix and source-fixed fixtures,data/historical_defect_registry.csv,scripts/historical_defects.py
+Historical detection summary,results/historical/historical_defect_summary.json,scripts/historical_defects.py
+Native Gloo 12-cell evaluation,results/evaluation/gloo_topology_summary.json,scripts/gloo_topology.py
+Operating-system process adapters,results/evaluation/extracted_adapters_summary.json,scripts/extracted_adapters.py
+Checker latency and allocation,results/evaluation/scalability_summary.json,scripts/scalability.py
+Figure 1,paper/figures/F1_contract_pipeline.tex,figure source
+Figure 2,paper/figures/F2_repository_matrix.tex,figure source
+Figure 3,paper/figures/F3_mutation_benchmark.tex,figure source
+Figure 4,paper/figures/F4_scalability.tex,figure source
